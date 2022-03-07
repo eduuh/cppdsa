@@ -8,7 +8,7 @@ int main(int argc, const char** argv) {
 
     cout << "/* forward direction */" << "\n";
     //iterate forward
-    for (it = set1.begin(); it != set1.end(); ++it)
+   for (it = set1.begin(); it != set1.end(); ++it)
     {
        cout << *it << " ";
     }
