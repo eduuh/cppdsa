@@ -1,0 +1,3 @@
+#!/bin/bash
+
+touch input.txt output.txt new.cpp
