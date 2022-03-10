@@ -84,3 +84,48 @@ max_size()
 
 if you know that for sure, that you need at least 100 elements. you can use the reserve method
 
+
+### Deque
+
+double-ended queue is sequence container with dynnamic sizes that can be expanded or contracted on both ends (front or back)
+
+deque are not guranteed to store all its elements in contigouse storage locations: accessing elementsina deque by offsetting a pointer to another element causes undefined behaviour.
+
+Elements of a deque can be scatteren in different chunks of storage.
+
+```c
+- []
+- at()
+- back()
+- begin()
+- capacity()
+- clear()
+- emptly()
+- end()
+- erase()
+- front()
+- insert()
+- pop_back()
+- pop_front()
+- push_back()
+- push_front()
+
+- resize()
+- size()
+```
+
+initialization of a deque
+
+```c
+#include <deque>
+
+using namespace std;
+
+deque<int> first;                  //empty deque of ints
+deque<int> second (4, 100);        //four ints with value 100
+deque<int> third (second.begin(), second.end()); // iterating through second
+deque<int>  fourth (third);  // a copy of third
+```
+
+
+
